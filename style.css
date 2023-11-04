@@ -1,0 +1,160 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: pink;
+}
+
+p{
+    font-size: 45px;
+    text-align: center;
+    margin: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+
+}
+
+
+button{
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    border: none;
+    background: none;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.addnote{
+    height: 100px;
+    width: 100px;
+}
+
+.save{
+
+      height: 21px;
+    width: 21px;
+
+}
+
+.delete{
+
+    height: 23px;
+    width: 23px;
+
+}
+.note{
+
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+::-webkit-scrollbar{
+ width: 0px;
+}
+.tool-bar{
+
+    width: auto;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    color: white;
+    background-color: black;
+    margin-left: 280px;
+    border-bottom-left-radius: 10px;
+    padding: 5px;
+    justify-content:space-evenly;
+    margin-bottom: 10px;
+
+} 
+
+
+.main-text{
+
+    height: 330px;
+    width: 100%;
+    border: none;
+    resize: none;
+    font-size: 17px;
+    padding: 15px;
+    outline: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+
+    
+
+}
+
+@media(max-width:500px){
+  
+p{
+    height: auto;
+    width: auto;
+    font-size: 45px;
+    margin: 20px;
+}
+
+.note{
+
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+justify-self:end;
+margin-bottom: 30px;
+
+}
+
+#main{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 30px;
+    margin: 0;
+    padding: 0;
+
+}
+.tool-bar{
+
+    width: 70px;
+    justify-self: end;
+} 
+
+.parent{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addnote{
+    height: 70px;
+    width: 70px;
+}
+
+button{
+    right: 30px;
+    bottom: 10px;
+}
+
+
+}
